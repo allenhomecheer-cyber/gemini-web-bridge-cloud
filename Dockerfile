@@ -1,7 +1,7 @@
 FROM python:3.11-slim
 WORKDIR /app
 ENV PYTHONUNBUFFERED=1
-EIV PORT=8080
+ENV PORT=8080
 ENV DATA_DIR=/app/data
 
 RUN apt-get update && apt-get install -y --no-install-recommends curl gcc python3-dev && rm -rf /var/lib/apt/lists/*
